@@ -1,0 +1,29 @@
+#a1 {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  h1{
+    text-emphasis: none;
+    text-align: center;
+    color: darkblue;
+  }
+
+
+  #a1 td, #a1 th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  #a1 tr:nth-child(even){background-color: #f2f2f2;}
+
+  #a1 tr:hover {background-color: #ddd;}
+
+  #a1 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:rgb(35, 97, 138);
+    color: rgb(179, 194, 202);
+    
+  }

@@ -1,0 +1,40 @@
+<app-nav-component></app-nav-component>
+<h1>Books List</h1>
+<nav class="navbar">
+
+    <input class="form-control" type="text" [(ngModel)]="searchBooks"
+        placeholder="Enter Title|Author|Subject to search">
+
+</nav>
+<table id="a1" class="table table-bordered" >
+    <thead>
+
+        <th>Id</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Subject</th>
+        <th>Rack_No</th>
+        <th>Action</th>
+        
+
+    </thead>
+    <tbody>
+        <tr
+            *ngFor="let user of users | filter: searchBooks | sort: ['Title'] | paginate: {itemsPerPage: 5, currentPage: p}; ">
+
+            <td>{{user.id}}</td>
+            <td>{{user.Title}}</td>
+            <td>{{user.Author}}</td>
+            <td>{{user.Subject}}</td>
+            <td>{{user.Rack_No}}</td>
+            <td>
+                <button mat-raised-button (click)="getDetails()" style="background-color:rgb(116, 163, 194); color: darkblue;"><b>View Details</b></button>
+            </td>
+
+        </tr>
+    </tbody>
+
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+</table>
+<app-footer></app-footer>

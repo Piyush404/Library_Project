@@ -1,0 +1,52 @@
+h3{
+  color:rgb(161, 18, 18);
+   text-align: center; 
+   text-emphasis: inherit;
+   font-size: 30px;
+   
+  
+}
+.card-body{
+  background-color: rgb(135, 200, 192);
+}
+label{
+  color: darkblue;
+  text-emphasis:inherit;
+}
+
+
+
+h2{
+  padding: 1;
+  font-family: cursive;
+}
+
+body {
+  // background-color: rgb(2, 21, 29);
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 50px;
+  color: rgb(51, 45, 45);
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(207, 110, 183), 0 0 20px rgb(72, 194, 82), 0 0 30px #aa4f84, 0 0 40px #b459a0, 0 0 50px #b93fa9, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px rgb(133, 214, 67), 0 0 30px #5a8136, 0 0 40px #71d14a, 0 0 50px #60d443, 0 0 60px #5a869b, 0 0 70px #acff4d, 0 0 80px #62c749;
+  }
+}
+img{
+  width: 100px;
+  height: 100px;
+  padding: 1;
+  align-self: left;
+}
